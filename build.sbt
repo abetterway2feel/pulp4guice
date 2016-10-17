@@ -5,6 +5,8 @@ scalaVersion := "2.11.8"
 
 updateOptions := updateOptions.value.withCachedResolution(true)
 
+lazy val bidder = (project in file("."))
+
 scalacOptions := Seq(
   "-unchecked",
   "-deprecation",
@@ -22,5 +24,7 @@ scalacOptions := Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.google.inject" % "guice" % "3.0"
+  "com.google.inject" % "guice" % "3.0",
+  "org.reflections" % "reflections" % "0.9.10",
+  "org.slf4j" % "slf4j-api" % "1.7.21"
 )
