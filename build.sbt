@@ -1,11 +1,10 @@
 name := "pulp4guice"
+
 version := "0.1.0"
 
 scalaVersion := "2.11.8"
 
 updateOptions := updateOptions.value.withCachedResolution(true)
-
-lazy val bidder = (project in file("."))
 
 scalacOptions := Seq(
   "-unchecked",
@@ -26,5 +25,18 @@ scalacOptions := Seq(
 libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "3.0",
   "org.reflections" % "reflections" % "0.9.10",
-  "org.slf4j" % "slf4j-api" % "1.7.21"
+  "org.slf4j" % "slf4j-api" % "1.7.21",
+
+  "ch.qos.logback" % "logback-classic" % "1.1.7",
+  "org.codehaus.janino" % "janino" % "2.7.8",
+  "org.tuxdude.logback.extensions" % "logback-colorizer" % "1.0.1" ,
+  "org.slf4j" % "log4j-over-slf4j" % "1.7.21",
+
+  //Test
+  "org.scalatest" %% "scalatest" % "3.0.0" % Test,
+  "org.mockito" % "mockito-core" % "1.8.5" % Test
+
 )
+
+
+lazy val pulp4guice = project in file(".")
