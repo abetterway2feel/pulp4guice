@@ -1,4 +1,4 @@
-package com.abberway2feel.pulp4guice.modules
+package com.abberway2feel.pulp4guice.resolver
 
 import com.abberway2feel.pulp4guice.env.EnvironmentNameResolver
 import com.abeterway2feel.pulp4guice.env.{Environment, Environments}

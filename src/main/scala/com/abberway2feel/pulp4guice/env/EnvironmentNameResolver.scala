@@ -6,3 +6,13 @@ trait EnvironmentNameResolver {
 
   def getEnvironmentProperty: Environment
 }
+
+object EnvironmentNameResolver {
+
+  def environmentNameResolver(environment: Environment) = {
+    new EnvironmentNameResolver {
+      override def getEnvironmentProperty: Environment = environment
+    }
+  }
+
+}

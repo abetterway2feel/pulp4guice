@@ -26,6 +26,7 @@ libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "3.0",
   "org.reflections" % "reflections" % "0.9.10",
   "org.slf4j" % "slf4j-api" % "1.7.21",
+  "javax.servlet" % "servlet-api" % "2.3",
 
   "ch.qos.logback" % "logback-classic" % "1.1.7",
   "org.codehaus.janino" % "janino" % "2.7.8",

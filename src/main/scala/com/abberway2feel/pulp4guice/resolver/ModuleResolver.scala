@@ -1,4 +1,4 @@
-package com.abberway2feel.pulp4guice.modules
+package com.abberway2feel.pulp4guice.resolver
 
 import com.google.inject.Module
 
