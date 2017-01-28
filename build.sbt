@@ -2,7 +2,7 @@ name := "pulp4guice"
 
 version := "0.1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
 
 updateOptions := updateOptions.value.withCachedResolution(true)
 
@@ -18,7 +18,6 @@ scalacOptions := Seq(
   "-Ywarn-unused-import",
   "-Ywarn-dead-code",
   "-Ywarn-nullary-unit",
-  "-Yopt:l:project",
   "-encoding", "utf8"
 )
 
