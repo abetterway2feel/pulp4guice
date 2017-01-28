@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/abetterway2feel/pulp4guice.svg?branch=master)](https://travis-ci.org/Yalday/YaldaySQLMerchant)
+
+
 # pulp4guice
 Scala Environment Resolving For Guice
 
